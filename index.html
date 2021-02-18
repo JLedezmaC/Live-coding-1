@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: Lato;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: solid 1px lightgray;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+        font-size: 3rem;
+        width: 20%;
+        height: 205px;
+      }
+
+      td small {
+        display: block;
+        font-size: 1rem;
+      }
+
+      button {
+        margin-top: 1rem;
+      }
+
+      td:after {
+        content: attr(data-number);
+        position: absolute;
+        left: 1rem;
+        top: 0.5rem;
+        font-size: 2rem;
+        color: lightgray;
+      }
+
+      .red{
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Manejo de parqueo</h1>
+
+    <h3>Tienes <b>19</b> parqueos libres</h3>
+
+    <form action="">
+      <label for="">Placa:</label>
+      <input type="text" class="requerido" />
+
+      <button>
+        Agregar
+      </button>
+    </form>
+
+    <table>
+      <tr>
+        <td data-number="1">
+          🚗
+          <small>BBR-449</small>
+          <small>7:14am</small>
+          <button>Eliminar</button>
+        </td>
+        <td data-number="2"></td>
+        <td data-number="3"></td>
+        <td data-number="4"></td>
+        <td data-number="5"></td>
+      </tr>
+      <tr>
+        <td data-number="6"></td>
+        <td data-number="7"></td>
+        <td data-number="8"></td>
+        <td data-number="9"></td>
+        <td data-number="10"></td>
+      </tr>
+      <tr>
+        <td data-number="11"></td>
+        <td data-number="12"></td>
+        <td data-number="13"></td>
+        <td data-number="14"></td>
+        <td data-number="15"></td>
+      </tr>
+      <tr>
+        <td data-number="16"></td>
+        <td data-number="17"></td>
+        <td data-number="18"></td>
+        <td data-number="19"></td>
+        <td data-number="20"></td>
+      </tr>
+    </table>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
